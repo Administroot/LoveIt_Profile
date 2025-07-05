@@ -10,7 +10,9 @@ Although not required in all cases, [Git](https://git-scm.com/), [Go](https://go
 
 ```shell
 git submodule add --name LoveIt https://github.com/dillonzq/LoveIt.git themes/LoveIt
-hugo
+cd themes/LoveIt && git checkout v0.3.0
+cd -
+hugo server
 ```
 
 ## 简介
@@ -18,6 +20,7 @@ hugo
 本站是Administroot的个人网站，主要用于记录个人的学习经历，以及一些技术的学习笔记。
 
 ## 开发事项
+
 在开发中，可以参考themes/Lovelt/exampleSite目录下的内容
 在content/posts目录下创建Markdown文件，文件格式如下
 ![开发演示图片](demo.png)
