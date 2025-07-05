@@ -1,0 +1,4 @@
+.hugo*
+*.bak
+public/
+resources/
